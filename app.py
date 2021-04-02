@@ -42,7 +42,7 @@ def check_updates():
         text = ''
 
         if update['message']['text'].isdigit():
-            count = min(int(update['message']['text']), 500)
+            count = min(int(update['message']['text']), 300)
 
         for i in range(count):
             text += words[random.randint(0, len(words) - 1)]
@@ -51,7 +51,7 @@ def check_updates():
             'chat_id': update['message']['chat']['id'],
             'text': text,
             'reply_markup': {'keyboard': [
-                [{'text': getWord}], [{'text': '5'}, {'text': '500'}]
+                [{'text': getWord}], [{'text': '5'}, {'text': '300'}]
             ]},
             'parse_mode': 'HTML'
         }
