@@ -13,6 +13,8 @@ def check_updates():
 
     URL = 'https://api.telegram.org/bot'
 
+    URL = 'https://api.telegram.org/bot'
+
     data = {'offset': offset + 1, 'limit': 0, 'timeout': 0}
 
     try:
